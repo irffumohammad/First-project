@@ -3,13 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>Product Listing Example</title>
+    <style>
+        /* This is a simple styling block to make the card look organized */
+        .product-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 20px;
+            width: 300px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .product-title {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+        .product-price {
+            font-size: 1.5em;
+            color: #b12704; /* Common e-commerce price color */
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .add-to-cart {
+            background-color: #ff9900; /* Amazon-like button color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        .add-to-cart:hover {
+            background-color: #e68a00;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Welcome to My Website!</h1>
-    <p>This is a paragraph of text. You can add more content here.</p>
-    <a href="https://www.google.com">Click here to go to Google</a>
+    <div class="product-card">
+        <img src="https://via.placeholder.com/300x200" alt="Stylish T-Shirt">
+
+        <h2 class="product-title">Premium Cotton T-Shirt</h2>
+
+        <p class="product-description">
+            A comfortable and breathable t-shirt, perfect for everyday wear. Available in multiple colors.
+        </p>
+
+        <p class="product-price">$24.99</p>
+
+        <div class="product-rating">
+            ★★★★★ (150 reviews)
+        </div>
+
+        <button class="add-to-cart">Add to Cart</button>
+    </div>
 
 </body>
 </html>
